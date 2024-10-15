@@ -14,6 +14,12 @@ export const AaraasApi = createApi({
         params,
       }),
     }),
+    getAaraasById: builder.query({
+      query: (id) => ({
+        url: `/api/aaraas/${id}`,
+        method: "GET",
+      }),
+    }),
   }),
 });
-export const { useGetAaraasQuery, useLazyGetAaraasQuery } = AaraasApi;
+export const { useGetAaraasQuery, useLazyGetAaraasQuery,useGetAaraasByIdQuery } = AaraasApi;

@@ -30,6 +30,7 @@ export default function RootLayout() {
       <Stack   screenOptions={{
       }}>
         <Stack.Screen  name="(tabs)" options={{ headerShown: false }} />
+
         {/* <Stack.Screen name="+not-found" /> */}
       </Stack>
     </Provider>

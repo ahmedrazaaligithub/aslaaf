@@ -5,7 +5,8 @@ const theme = {
       white:"#fff",
       check:"#A6B37D",
       dark:"#181C14",
-      danger:"#D10000"
+      danger:"#D10000",
+      gray:'#ddd'
     },
   };
   

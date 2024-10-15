@@ -10,7 +10,6 @@ import {
 } from "react-native";
 import theme from "@/theme";
 import moment from "moment-hijri";
-import Icon from "react-native-vector-icons/MaterialCommunityIcons";
 import { useGetAaraasQuery } from "@/services/aaraasService";
 import TextComponent from "@/components/TextComponent";
 import PaginationComponent from "@/components/Pagination";
@@ -76,7 +75,7 @@ export default function AllAaraas() {
 
   const renderItem = ({ item, index }: { item: {}; index: number }) => (
     <View style={styles.dataItem}>
-      <Link href={`/ursId/${item._id}`}>
+      <Link href={`/ursid/${item._id}`}>
         {/* <View style={styles.textContainer}> */}
         <TextComponent type="xl" style={styles.buzurgNameText}>
           {item.name}
@@ -164,7 +163,7 @@ export default function AllAaraas() {
 
 const styles = StyleSheet.create({
   safeArea: { flex: 1, backgroundColor: theme.colors.primary },
-  container: { flex: 1, backgroundColor: theme.colors.primary, marginTop: 20 },
+  container: { flex: 1, backgroundColor: theme.colors.primary },
   titleContainer: { gap: 6, paddingHorizontal: 14, paddingVertical: 12 },
   flatListContainer: {
     flex: 1,
@@ -207,6 +206,7 @@ const styles = StyleSheet.create({
   selectedChip: {
     borderWidth: 2, // Add a border when selected
     borderColor: theme.colors.white, // White border color
+    backgroundColor:"none"
   },
   chipText: {
     backgroundColor: theme.colors.white,
